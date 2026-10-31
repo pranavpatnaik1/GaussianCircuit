@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gaussiancircuit"
+version = "0.1.0"
+description = "Indoor circuit planning from uncertain scene geometry"
+requires-python = ">=3.12"
+dependencies = ["pydantic>=2.10,<3", "shapely>=2.0,<3"]
+
+[project.optional-dependencies]
+api = [
+  "fastapi>=0.115,<0.116",
+  "uvicorn[standard]>=0.34,<0.35",
+  "sqlalchemy>=2.0,<2.1",
+  "python-multipart>=0.0.20,<0.1",
+  "pillow>=12,<14",
+  "pillow-heif>=1.1,<2",
+]
+dev = [
+  "httpx>=0.28,<0.29",
+]
+
+[project.scripts]
+gaussiancircuit = "gaussiancircuit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

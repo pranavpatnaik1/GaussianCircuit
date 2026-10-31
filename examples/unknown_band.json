@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "id": "unknown_band",
+  "revision": 1,
+  "units": "meters",
+  "coordinate_frame": "floor_xy_z_up",
+  "source": "synthetic",
+  "floor": {"id": "floor", "vertices": [[0, 0], [8, 0], [8, 6], [0, 6]]},
+  "obstacles": [],
+  "unknown_regions": [
+    {"id": "unobserved", "vertices": [[0, 2.7], [8, 2.7], [8, 3.3], [0, 3.3]]}
+  ]
+}

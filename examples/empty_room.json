@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "id": "empty_room",
+  "revision": 1,
+  "units": "meters",
+  "coordinate_frame": "floor_xy_z_up",
+  "source": "synthetic",
+  "floor": {"id": "floor", "vertices": [[0, 0], [8, 0], [8, 6], [0, 6]]},
+  "obstacles": [],
+  "unknown_regions": []
+}
